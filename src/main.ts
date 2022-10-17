@@ -1,9 +1,13 @@
 import Game from "./game/Game"
+import Map from "./game/map/Map"
+
 
 
 
 function main(): number {
-    let game = new Game();
+    const map:Map = new Map();
+
+    let game = new Game(map);
 
     game.init();
 

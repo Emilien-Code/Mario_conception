@@ -1,26 +1,19 @@
+import Position from "./utils/Position";
+import Map from "./map/Map"
 const screenWidth = 10;
 const screenHeight = 10;
 
+
 class Game {
-    square : Array<Array<any>>; 
+    map : Array<Array<any>>; 
 
 
-    constructor(){
-        this.square = [];
-
+    constructor(map: Map){
+        this.map = map.getMap();
     }
 
     init(): void{
-        for(let i:number = 0; i < screenWidth; i++){
-            
-            const a:Array<any> =[];
-            
-            for(let j:number = 0; j < screenWidth; j++){
-                a.push(0);
-            }
 
-            this.square.push(a);
-        }
     }
 
 
@@ -31,11 +24,12 @@ class Game {
 
     render(): void{
         for(let i:number = 0; i < screenWidth; i++){
-            //for(let j:number = 0; j < screenWidth; j++){
+            for(let j:number = 0; j < screenWidth; j++){
 
                 // checker avec des typeof le remettre dans un tab et le console.log
-                console.log(this.square[i]/*?.render* In the future*/);
-            //}   
+                process.stdout.write(this.map[i][j].render ? this.map[i][j].render() : "_");
+                // console.log(this.map[i][j]?.render() /* In the future*/);
+            }   
             console.log("");
         }
     }

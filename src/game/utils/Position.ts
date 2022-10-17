@@ -2,9 +2,9 @@ class Position{
     x: number ;
     y: number ;
 
-    constructor(){
-        this.x = 0
-        this.y = 0
+    constructor(x:number=0, y:number=0){
+        this.x = x
+        this.y = y
     }
     update(x: number, y :number){
         this.x = x;
