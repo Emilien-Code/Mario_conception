@@ -2,7 +2,7 @@ import Position from "../utils/Position"
 
 interface IMovable{
 
-    moveTo(position: Position): void;
+    moveTo(position: any): void;
 
 }
 
