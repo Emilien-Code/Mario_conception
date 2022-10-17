@@ -1,8 +1,8 @@
 import Position from "./utils/Position";
+import Player from "./Player/Player";
 import Map from "./map/Map"
 const screenWidth = 10;
 const screenHeight = 10;
-
 
 class Game {
     map : Array<Array<any>>; 
@@ -10,6 +10,7 @@ class Game {
 
     constructor(map: Map){
         this.map = map.getMap();
+        this.map[9][0] = new Player(new Position(9,9), "normal")
     }
 
     init(): void{

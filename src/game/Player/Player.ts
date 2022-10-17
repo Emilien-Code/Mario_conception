@@ -37,3 +37,6 @@ class Player implements IMovable, IRenderable, IDeath{
     }
 
 }
+
+
+export default Player;
