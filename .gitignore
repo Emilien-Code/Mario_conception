@@ -1,2 +1,5 @@
-dist 
-node_module
+node_modules/
+.cache/
+dist/
+package-lock.json
+.DS_Store
