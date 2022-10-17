@@ -3,10 +3,10 @@ import Position from "../utils/Position"
 
 abstract class Bloc {
 
-    position: Position;
+    private position: Position;
     
-    constructor() {
-        this.position = new Position();
+    constructor(position: Position) {
+        this.position = position;
     }
 }
 export default Bloc
