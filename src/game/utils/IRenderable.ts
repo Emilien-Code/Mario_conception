@@ -1,5 +1,7 @@
-interface IHItableBlock{
+interface IRenderable{
 
     Render(): void;
 
 }
+
+export default IRenderable

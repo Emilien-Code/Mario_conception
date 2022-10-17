@@ -1,5 +1,7 @@
-interface IHItableBlock{
+interface IHitableBlock{
 
     hit(): void;
 
 }
+
+export default IHitableBlock
