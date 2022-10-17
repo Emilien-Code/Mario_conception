@@ -1,0 +1,5 @@
+interface IHItableBlock{
+
+    Render(): void;
+
+}
