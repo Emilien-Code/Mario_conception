@@ -1,6 +1,6 @@
 interface IRenderable{
 
-    render(): void;
+    render(): string;
 
 }
 

@@ -10,6 +10,6 @@ abstract class Bloc implements IRenderable{
         this.position = position;
     }
     
-    abstract render();
+    abstract render() : string;
 }
 export default Bloc

@@ -16,7 +16,7 @@ class Bricks extends Bloc implements IHitableBlock{
         console.log("Bricks disapear")
     }
 
-    render(){
+    render(): string{
         if(!this.isOpened)
             return "?"
         return "";

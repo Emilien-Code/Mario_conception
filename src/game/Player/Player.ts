@@ -1,13 +1,21 @@
 import IMovable from "../utils/IMove";
 import Position from "../utils/Position"
+import IRenderable from "../utils/IRenderable"
+import IDeath from "../utils/IDeath"
 
-class Player implements IMovable{
-    Person: String;
+class Player implements IMovable, IRenderable, IDeath{
+    person: String;
     Hp: Number;
-    Power: String;
-    jumping_v: number = 27;
+    power: String;
+    jumping_v: number;
     dead: boolean;
     position: Position;
+
+    constructor(position : Position, power: string){
+        this.position = position;
+        this.power = power;
+
+    }
     
     moveTo(position: Position): void{
         this.position = position; 
@@ -19,6 +27,13 @@ class Player implements IMovable{
 
     die() {
         this.dead = true;
-      }
+    }
+
+    render(): string {
+        if(!this.dead){
+            return "$";
+        }
+        return "";
+    }
 
 }
