@@ -4,6 +4,6 @@ function main(): string {
 }
 
 const result: any = main();
-//console.log(result);
+console.log(result);
 
 export default main;
