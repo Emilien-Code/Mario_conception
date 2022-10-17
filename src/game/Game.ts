@@ -15,7 +15,7 @@ class Game {
             
             const a:Array<string> =[];
             
-            for(let j:number = 0; j < screenWidth; j++){
+            for(let j:number = 0; j < screenHeight; j++){
                 a.push("#");
             }
 

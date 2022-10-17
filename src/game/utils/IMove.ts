@@ -1,6 +1,6 @@
 interface IMovable{
 
-    moveTo(position: Position): void;
+    moveTo(position: any): void;
 
 }
 
