@@ -1,5 +1,7 @@
-import Game from "./game/Game"
-import Map from "./game/map/Map"
+import Game from "./game/Game";
+import Map from "./game/map/Map";
+
+
 
 
 
@@ -9,19 +11,39 @@ function main(): number {
 
     let game = new Game(map);
 
+
     game.init();
 
-
-//while  : game.handleEvent, game.update, game.render
-
-
+    const readline = require('readline');
+    readline.emitKeypressEvents(process.stdin);
+    let pressedKey:string = null;
     game.render()
+    
 
-    //const hello: string = "Hello, World!";
+    process.stdin.on('keypress', (str, key) => {
+        if(key.ctrl == true && key.name == 'c'){
+            process.exit()
+        }
+        
+        pressedKey = key.name;
+        
+                
+        game.update(pressedKey);
+        game.render();
+                    
+    })
+                    
+
+                        
+                        
+    
+    
+    
+    //while  : game.handleEvent, game.update, game.render
     return 1;
 }
 
 const result: any = main();
-console.log(result);
+// console.log(result);
 
 export default main;

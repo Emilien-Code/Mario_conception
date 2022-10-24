@@ -1,7 +1,7 @@
 import Bloc from "./Bloc"
 import IBreakableBlock from "../utils/IBreakableBlock"
 import Position from "../utils/Position"
-//Brokable
+
 class Bricks extends Bloc implements IBreakableBlock{
     private isOpened: boolean;
 

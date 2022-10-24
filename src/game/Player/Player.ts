@@ -24,7 +24,9 @@ class Player implements IMovable, IRenderable, IDeath{
     jump(){
         this.position.y = this.position.y + 1;
     }
-
+    getPosition(){
+        return this.position
+    }
     die() {
         this.dead = true;
     }
