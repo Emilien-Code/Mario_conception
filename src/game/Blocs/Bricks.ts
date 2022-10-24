@@ -1,8 +1,8 @@
 import Bloc from "./Bloc"
-import IHitableBlock from "../utils/IHitableBlock"
+import IBreakableBlock from "../utils/IBreakableBlock"
 import Position from "../utils/Position"
 
-class Bricks extends Bloc implements IHitableBlock{
+class Bricks extends Bloc implements IBreakableBlock{
     private isBroken: boolean;
 
 
@@ -11,7 +11,7 @@ class Bricks extends Bloc implements IHitableBlock{
         this.isBroken = false;
     }
 
-    hit(): void {
+    break(): void {
         this.isBroken = true;
         console.log("Bricks disapear")
     }

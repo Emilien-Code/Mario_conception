@@ -4,9 +4,9 @@ import IRenderable from "../utils/IRenderable"
 import IDeath from "../utils/IDeath"
 
 class Player implements IMovable, IRenderable, IDeath{
-    person: String;
-    Hp: Number;
-    power: String;
+    person: string;
+    Hp: number;
+    power: string;
     jumping_v: number;
     dead: boolean;
     position: Position;
