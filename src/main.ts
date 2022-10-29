@@ -21,7 +21,7 @@ function main(): number {
     
 
 
-    //Ici, faire une boucle temps que le joueur est vivant et écouter les keyboard events 
+    //Ici, faire une boucle temps que le joueur est vivant et écouter les keyboard events pour que les pnj s'updates 
     process.stdin.on('keypress', (str, key) => {
         if(key.ctrl == true && key.name == 'c'){
             process.exit()
