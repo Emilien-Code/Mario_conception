@@ -1,54 +1,34 @@
-# Typescript Bootstrap Project
+# Mario
 
-Projet Typescript pré-configuré (Jest, Nodemon...)
+## Démarage rapide 
+    - npm install
+    - nodemon ./src/main.ts
 
-## Spécifications techniques
+## Le jeu
+Le jeu se compose de blocs monstres et d'un joueur
 
-`node -v`
+## Les bloques 
+    - Blocs cassables : 
+        - Briques (symbolisées par #)
+        - Bloques mystères (symbolisées par ?)
 
-ex : v.18.10.0
+## Monstres
+    - Un monstre (symbolisé par un @)
 
-### Exécution des commandes NPM
+## Joueur
+    - Le joueur (symbolisé par $) peut se déplacer ( flèche de gauche/droite puis entrer )
+        ⚠️ Il écrase les autres symboles présent sur le terminale (pas de gestioin de collision)
 
-_Les commandes npm ci-dessous doivent toutes être exécutées depuis le répertoire où se situe le fichier package.json_
+## Étudiants 
+    - VIVIER Émilien
+    - BOULHDIR Khaoula
 
-### Installation des dépendances NPM (avant la première utilisation)
+## Repository 
+    - https://github.com/Emilien-Code/Mario_conception
 
-`npm install`
 
-### Installation globale de Nodemon pour le Hot Reloading (avant la première utilisation)
 
-`npm install -g nodemon`
 
-ou
-
-`sudo npm install -g nodemon` (sur systèmes Unix)
-
-### Exécution du programme (code JS déjà transpilé)
-
-`npm start`
-
-### Transpilation du code TypeScript vers JavaScript
-
-`npm run build`
-
-### Transpilation TypeScript vers JavaScript et exécution du programme
-
-`npm run dev`
-
-### Transpilation TypeScript vers JavaScript et exécution du programme avec activation du Hot Reloading (nodemon doit être installé)
-
-`npm run watch`
-
-### Exécution des tests unitaires avec Jest.js
-
-`npm test`
-
-### Emplacement du code TypeScript transpilé en JavaScript
-
-`./dist`
-
----
 
 **Alexandre Leroux**
 
