@@ -1,6 +1,7 @@
 import Position from "../utils/Position";
 import Mystery from "../Blocs/Mystery";
 import Bricks from "../Blocs/Bricks";
+import Monster from "../Monsters/Monster";
 const screenWidth = 10;
 const screenHeight = 10;
 class Map {
@@ -24,11 +25,12 @@ class Map {
 
         }
 
-        this.map[9][3] = new Bricks(new Position(3,1))
-        this.map[9][4] = new Bricks(new Position(4,1))
-        this.map[9][5] = new Bricks(new Position(5,1))
-        this.map[9][6] = new Bricks(new Position(6,1))
+        this.map[9][3] = new Bricks(new Position(9,3))
+        this.map[9][4] = new Bricks(new Position(9,4))
+        this.map[9][5] = new Bricks(new Position(9,5))
+        this.map[9][6] = new Bricks(new Position(9,6))
         
+        this.map[9][8] = new Monster(new Position(9,8))
         
         this.map[6][1] = new Mystery(new Position(6,1))
     }
