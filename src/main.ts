@@ -20,6 +20,8 @@ function main(): number {
     game.render()
     
 
+
+    //Ici, faire une boucle temps que le joueur est vivant et écouter les keyboard events 
     process.stdin.on('keypress', (str, key) => {
         if(key.ctrl == true && key.name == 'c'){
             process.exit()

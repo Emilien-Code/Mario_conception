@@ -45,9 +45,6 @@ class Game {
             console.log("jump");  
         }
 
-        // console.log("y :" + this.player.getPosition().y)
-        // console.log("x :" + this.player.getPosition().x)
-
         this.map[this.player.getPosition().y][this.player.getPosition().x] = this.player
     }
 
